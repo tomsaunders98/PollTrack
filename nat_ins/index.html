@@ -1,0 +1,96 @@
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500&display=swap" rel="stylesheet">
+
+  <script type="text/javascript">
+
+    function t_alert(text){
+       document.getElementById("alert").innerHTML = text;
+    }
+    function calcInc(){
+      salary = Number(document.getElementById("salary").value);
+      console.log(salary);
+      console.log(typeof salary);
+      if (!isNaN(salary)){
+        if(salary > 9568){
+          if (salary < 50270){
+            salary = salary - 9568
+            old_rate = (salary * 0.12).toFixed(0);
+            new_rate = (salary * 0.1325).toFixed(0);
+            lose = new_rate-old_rate;
+            t_alert("Previously you would have paid: <span class='money'>£" + old_rate + "</span><br />You will now pay: <span class='money'>£" + new_rate + "</span><br /> You lose: <span class='money'>£" + lose + "</span>");
+          }else{
+            ex_salary = salary - 50270;
+            old_rate = (40702*0.12 + ex_salary*0.02).toFixed(0);
+            new_rate = (40702*0.1325 + ex_salary*0.0325).toFixed(0);
+            lose = new_rate-old_rate;
+            t_alert("Previously you would have paid: <span class='money'>£" + old_rate + "</span><br />You will now pay: <span class='money'>£" + new_rate + "</span><br /> You lose: <span class='money'>£" + lose + "</span>");
+          }
+        }else{
+          t_alert("You don't pay any national insurance and won't be affected by the rise");
+        }
+      }else{
+        t_alert("Please enter a number");
+      }
+    }
+  </script>
+  <style type="text/css">
+    .wrapper {
+      font-family: 'Bitter', serif;
+      color: White;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      text-align: left;
+      background-color: #5c909d;
+      border-radius: 1rem;
+      padding: 1%;
+    }
+    .money{
+      font-weight: bold;
+    }
+    #salary{
+      box-sizing: border-box;
+      width: 70%;
+      height: 39px;
+      margin-left: .5rem;
+      padding: .1rem .8rem;
+      color: #646464;
+      font-size: .8rem;
+      border-radius: 1.1875rem;
+      font-family: 'Bitter', serif;
+    }
+    #exec{
+      box-sizing: border-box;
+      width: 20%;
+      height: 39px;
+      margin-left: .5rem;
+      padding: .1rem .8rem;
+      background: #E33A11;
+      font-size: .8rem;
+      border-radius: 1.1875rem;
+      color: White;
+      font-family: 'Bitter', serif;
+    }
+    #alert{
+      padding: 2%;
+    }
+  </style>
+  <title></title>
+</head>
+<body>
+  <div class="wrapper">
+    <div>
+    <h3>How will the rise in National Insurance affect you ?</h3>
+    <input type="text" id="salary"/><input type="button" id="exec" value="Calculate">
+    <div id="alert"></div>
+    </div>
+    <script type="text/javascript">
+          document.getElementById("exec").onclick = calcInc;
+    </script>
+  </div>
+  </body>
+</html>
