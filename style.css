@@ -1,6 +1,110 @@
-.conf{
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+* {
+  padding-left: 0.1vw;
+}
+html, body {
+  cursor: crosshair;
+  font-family: 'Bitter', serif;
+}
+::-moz-selection {
+  /* Code for Firefox */
+  color: White;
+  background: #e33a11;
+}
+::selection {
+  color: White;
+  background: #e33a11;
+}
+
+/* SVG specific styles */
+.conf {
   opacity: 0.5;
 }
-svg text{
-    font-family: 'Bitter', serif;
+svg text {
+  font-family: 'Bitter', serif;
+}
+#focusLine {
+  fill: none;
+  stroke: #cdccce;
+  stroke-width: 0.5px;
+}
+.annotation-note-label {
+  font-size: 10;
+}
+
+/* Text colour
+(Likely good do parties through color scale  with stlye attr)
+*/
+#con {
+  color: #0597F2;
+}
+
+#lab {
+  color: #BF1717;
+}
+
+#lib {
+  color: #D96704;
+}
+
+#snp {
+  color: #F2E750;
+}
+
+#grn {
+  color: #04BF7B;
+}
+.title {
+  color: #e33a11;
+}
+
+/*Font size for elements, using clamp
+(Might have to look at implementations for older browers)
+*/
+.headfig {
+  font-weight: bold;
+  font-size: clamp(20px, 4vh, 30px);
+}
+
+#date {
+  color: #e33a11;
+  font-size: clamp(20px, 1.5vw, 65px);
+}
+
+h1 {
+  font-size: clamp(25px, 8vh, 70px);
+}
+
+/* trick for vertlical-align middle with percents*/
+#headline {
+  height: 4vh;
+  line-height: 4vh;
+  vertical-align: top;
+}
+
+.headtext {
+  vertical-align: top;
+  font-size: clamp(15px, 1vw, 25px);
+}
+
+/*href style*/
+.credits {
+  color: #8d8e8b;
+  font-size: 1vh;
+}
+
+.credits a {
+  color: #8d8e8b;
+}
+
+.credits a:hover {
+  color: #bbbcba !important;
+}
+
+.credits a:visited {
+  color: #8d8e8b;
 }
