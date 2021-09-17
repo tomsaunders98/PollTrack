@@ -33,7 +33,7 @@ function BuildGraph() {
   }
 
   //Load prediction data
-  d3.csv("pred_r.csv", format).then(function(data) {
+  d3.csv(filename, format).then(function(data) {
 
     //Set important variables
 
@@ -346,4 +346,8 @@ function BuildGraph() {
       .on('mousemove', mousemove)
       .on('mouseout', mouseout);
   })
+}
+
+function dl(){
+  window.open(exportname);
 }
