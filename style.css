@@ -65,13 +65,13 @@ h1 {
 
 
 .headtext {
-  font-size: clamp(8px, 3vh, 30px);
+
 }
 
 /*href style*/
 .credits {
   color: #8d8e8b;
-  font-size: 1vh;
+  font-size: clamp(5px, 1vh, 20px);
 }
 
 .credits a {
@@ -110,4 +110,5 @@ h1 {
 #headline{
   padding: 0 !important;
   margin: 0 !important;
+  font-size: clamp(8px, 3vh, 30px);
 }
