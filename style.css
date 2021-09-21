@@ -99,10 +99,14 @@ h1 {
     left: 0;
 }
 .main {
-    display: inline-block;
     position: relative;
     width: 100%;
+    display: flex;
 }
 #headline{
-  font-size: clamp(8px, 3vh, 30px);
+  font-size: clamp(8px, 4vh, 30px);
+}
+.wrapper{
+  vertical-align: bottom;
+
 }
