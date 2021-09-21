@@ -51,7 +51,7 @@ svg text {
 
 #date {
   color: #e33a11;
-  font-size: clamp(10px, 1.5vw, 65px);
+  font-size: clamp(10px, 5vh, 65px);
 }
 
 h1 {
