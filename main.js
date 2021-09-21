@@ -126,7 +126,8 @@ function BuildGraph() {
 
       //add in formatted % marker for headline
       d3.select(headfig)
-        .html(yval_f);
+        .html(yval_f)
+        .style("color", color(item));
 
       //add in latest date
       d3.select("#date")
