@@ -53,7 +53,7 @@ svg text {
 
 #date {
   color: #e33a11;
-  font-size: clamp(15px, 1.5vw, 65px);
+  font-size: clamp(10px, 1.5vw, 65px);
 }
 
 h1 {
@@ -62,15 +62,10 @@ h1 {
 }
 
 /* trick for vertlical-align middle with percents*/
-#headline {
-  height: 4vh;
-  line-height: 4vh;
-  vertical-align: top;
-}
+
 
 .headtext {
-  vertical-align: top;
-  font-size: clamp(10px, 1vw, 20px);
+  font-size: clamp(10px, 4vh, 30px);
 }
 
 /*href style*/
@@ -93,12 +88,22 @@ h1 {
 .head{
   height: 18vh;
   width: 100%;
+  padding-bottom: 1%;
 }
 .main {
-  height: 70vh;
   width: 100%;
 }
 .credits {
-  height: 10vh;
   width: 100%;
+}
+.svg-content-responsive {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.main {
+    display: inline-block;
+    position: relative;
+    width: 100%;
 }

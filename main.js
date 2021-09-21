@@ -15,6 +15,7 @@ function BuildGraph() {
   var svg = d3.select(".main")
     .append("svg")
     .attr("viewBox", viewbox)
+    .classed("svg-container", true)
     .attr("preserveAspectRatio", "xMinYMin")
     .append("g")
     .attr("transform",
