@@ -47,9 +47,7 @@ svg text {
 /*Font size for elements, using clamp
 (Might have to look at implementations for older browers)
 */
-.headfig {
-  font-size: clamp(8px, 3vh, 30px);
-}
+
 
 #date {
   color: #e33a11;
@@ -64,9 +62,7 @@ h1 {
 /* trick for vertlical-align middle with percents*/
 
 
-.headtext {
 
-}
 
 /*href style*/
 .credits {
@@ -108,7 +104,5 @@ h1 {
     width: 100%;
 }
 #headline{
-  padding: 0 !important;
-  margin: 0 !important;
   font-size: clamp(8px, 3vh, 30px);
 }
