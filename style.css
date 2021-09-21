@@ -48,8 +48,7 @@ svg text {
 (Might have to look at implementations for older browers)
 */
 .headfig {
-  font-weight: bold;
-  font-size: clamp(15px, 4vh, 30px);
+  font-size: clamp(10px, 4vh, 30px);
 }
 
 #date {
@@ -71,7 +70,7 @@ h1 {
 
 .headtext {
   vertical-align: top;
-  font-size: clamp(15px, 1vw, 25px);
+  font-size: clamp(10px, 1vw, 20px);
 }
 
 /*href style*/
