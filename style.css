@@ -49,16 +49,17 @@ svg text {
 */
 .headfig {
   font-weight: bold;
-  font-size: clamp(20px, 4vh, 30px);
+  font-size: clamp(15px, 4vh, 30px);
 }
 
 #date {
   color: #e33a11;
-  font-size: clamp(20px, 1.5vw, 65px);
+  font-size: clamp(15px, 1.5vw, 65px);
 }
 
 h1 {
-  font-size: clamp(25px, 8vh, 70px);
+  font-size: clamp(20px, 8vh, 70px);
+  font-weight: 900;
 }
 
 /* trick for vertlical-align middle with percents*/
