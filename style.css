@@ -48,7 +48,7 @@ svg text {
 (Might have to look at implementations for older browers)
 */
 .headfig {
-  font-size: clamp(8px, 4vh, 30px);
+  font-size: clamp(8px, 3vh, 30px);
 }
 
 #date {
@@ -65,7 +65,7 @@ h1 {
 
 
 .headtext {
-  font-size: clamp(8px, 4vh, 30px);
+  font-size: clamp(8px, 3vh, 30px);
 }
 
 /*href style*/
