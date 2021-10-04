@@ -44,6 +44,8 @@ function BuildGraph() {
     }));
     var extent = 1;
     r[0] = r[0].setDate(r[0].getDate() - extent);
+    today = new Date();
+    r[1] = today;
     //solves strange bug where first date on csv automatically binds to earliest date on scale
     data[0].date = data[0].date.setDate(data[0].date.getDate() + extent);
 
