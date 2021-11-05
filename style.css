@@ -9,6 +9,7 @@
 html, body {
   cursor: crosshair;
   font-family: 'Bitter', serif;
+  overflow: hidden;
 }
 ::-moz-selection {
   /* Code for Firefox */
